@@ -16,14 +16,16 @@ public class Premiere {
 			char variables2;
 			char variables3;
 			
-			variables1 = '\n';
-			variables2 = '9';
+			variables1 = 'c';
+			variables2 = '\n';
 			variables3 = '9';
-			double reel1;
+			 System.out.println(variables3);
+			double reel1 = 123.6754;
 			double reel2;
 			double reel3;
 			
-			String chaine;
+			String chaine ="Voici une belle chaîne";
+			String JourDeLaSemaine = "Lundi";
 	}
 
 }
