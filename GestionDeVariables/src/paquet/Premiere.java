@@ -5,14 +5,17 @@ import semaine.JourDeLaSemaine;
 public class Premiere {
 
 	public static void main(String[] args) {
-		//entier
+		   //entier
 		    byte b = 12;
 		    short s= 65;
 		    int i =876;
 		    long l = 13573;
 		    int i2 =8;
+		    System.out.println(b);
+		    System.out.println(s);
+		    System.out.println(i);
+		    System.out.println(l);
 		    System.out.println(i2);
-		    
 		    //un seul caractére
 			char variables1;
 			char variables2;
@@ -30,6 +33,8 @@ public class Premiere {
 			
 			//chaîne de caractére
 			String chaine ="Voici une belle chaîne";
+			
+			//initiation de JourDeLaSemaine
 			JourDeLaSemaine jour = JourDeLaSemaine.Lundi;
 			 System.out.println(jour);
 	}
