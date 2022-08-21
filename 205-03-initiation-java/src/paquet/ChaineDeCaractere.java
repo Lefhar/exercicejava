@@ -7,7 +7,7 @@ public class ChaineDeCaractere {
 		String s = new String("Valeur de la chaîne");
 		StringBuffer sb = new StringBuffer();
 		
-		System.out.println(s.length());
+		//System.out.println(s.length());
 		for(int i=s.length()-1;i>=0;i=i-1)
 		{
 			char c = s.charAt(i);
