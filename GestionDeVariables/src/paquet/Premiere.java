@@ -33,7 +33,7 @@ public class Premiere {
 			
 			//chaîne de caractére
 			String chaine ="Voici une belle chaîne";
-			
+			 System.out.println(chaine);
 			//initiation de JourDeLaSemaine
 			JourDeLaSemaine jour = JourDeLaSemaine.Lundi;
 			 System.out.println(jour);
