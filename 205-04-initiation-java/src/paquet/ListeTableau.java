@@ -38,6 +38,7 @@ public class ListeTableau {
 		   for (double number : maListe) {
 		         System.out.println("la liste des notes  " + number);
 		      }
+		   Question.close();
 	}
 
 }
