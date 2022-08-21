@@ -17,10 +17,13 @@ public class StringAndStringBuffer {
 		buffer_de_travail.append(" , chaîne à ajouter");
 		System.out.println(buffer_de_travail);
 		
+		// créer une StringBuffer 'second_buffer' à partir de m_st !
 		StringBuffer second_buffer = new StringBuffer(m_st);
 		
-		// second_buffer.setLength(4);
+		// récupérer dans second_buffer les cinq caractères de gauche !
 		System.out.println( " second buffer = " + second_buffer.substring(0,4) );
+		
+		
 		  second_buffer = new StringBuffer(second_buffer.substring(0,4));
 		  second_buffer.append("tototiti");
 		System.out.println( " second buffer = " + second_buffer );
