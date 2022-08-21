@@ -17,7 +17,7 @@ public class Calculette {
 		 System.out.println("Entrer le deuxiéme nombre");
 		 nbr2 = entrer.nextDouble();
 		 System.out.println(calculer(nbr1,nbr2,operator));
-		 
+		 entrer.close();
 	}
 
 }

@@ -28,6 +28,7 @@ public class Liste {
 			System.out.println(TabNote[i]+" ");
 		}
 		System.out.println("la somme des notes est égal à "+somme);
+		Question.close();
 	}
 
 }
