@@ -11,7 +11,7 @@ public class TestIntervalle {
 		 System.out.printf("Entrer un entier");
 		 int x = sc.nextInt();
 		 System.out.println(x+" a une longueur d'intervalle de "+testeintervalle.getLongueur());
-		 System.out.println(x+" a une longueur d'intervalle de "+testeintervalle.toString());
+		 System.out.println(x+" intervalle de "+testeintervalle.toString());
 		 
 		 if(testeintervalle.appartient(x))
 		 {
@@ -19,7 +19,7 @@ public class TestIntervalle {
 		 }else {
 			 System.out.println(x+ " appartient pas à l'interval"); 
 		 }
-		 
+		 System.out.println("le " + new Intervalle(1, 3));
 		 sc.close(); 
 	}
 	
