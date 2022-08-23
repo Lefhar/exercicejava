@@ -92,7 +92,7 @@ public class Personne {
 	{
 		if(isMarier())
 				{				
-			return getGenre()+" "+nom+" "+prenom+" à "+getAnneDeNaissance()+" ans il est Marié avec "+getConjoint().getGenre()+" " +getConjoint().getNom()+" agé de "+getConjoint().getAnneDeNaissance();
+			return getGenre()+" "+nom+" "+prenom+" à "+getAnneDeNaissance()+" ans "+(getGenre()=="h")?"il":"elle"+" est Marié avec "+getConjoint().getGenre()+" " +getConjoint().getNom()+" agé de "+getConjoint().getAnneDeNaissance();
 
 
 				}else {
