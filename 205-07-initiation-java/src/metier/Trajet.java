@@ -5,6 +5,8 @@ public abstract class Trajet
 	private  String villeDepart;
 	private String villeArrive;
 	private double distance;
+	
+	//trajet privé ou pas
 	private Boolean tp;
 	public  Trajet(String villeDepart, String villeArrive, double distance,Boolean tp)
 	{
@@ -12,12 +14,9 @@ public abstract class Trajet
 		this.villeDepart = villeDepart;
 		this.villeArrive = villeArrive;
 		this.distance = distance;
-		if(tp)
-		{
-			this.tp=true;
-		}else {
-			this.tp=false;
-		}
+
+			this.tp=tp;
+		
 	}
 	
 	
