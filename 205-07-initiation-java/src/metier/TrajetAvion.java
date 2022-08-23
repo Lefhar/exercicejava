@@ -3,6 +3,12 @@ package metier;
 public class TrajetAvion extends Trajet 
 {
 
+	public TrajetAvion(String villeDepart, String villeArrive, double distance)
+	{
+		
+		super(villeDepart,villeArrive, distance);
+	}
+	
 	public TrajetAvion(String villeDepart, String villeArrive, double distance, boolean tp)
 	{
 		super(villeDepart,villeArrive, distance,tp);

@@ -12,10 +12,10 @@ public class TesteTrajet {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		TrajetTrain trajettrain1 = new TrajetTrain("Cain","Caen",422.3,false);
-		TrajetTrain trajettrain2 = new TrajetTrain("Paris","Londres",1422.3,false);
+		TrajetTrain trajettrain1 = new TrajetTrain("Cain","Caen",422.3);
+		TrajetTrain trajettrain2 = new TrajetTrain("Paris","Londres",1422.3);
 		
-		TrajetAvion trajetavion1 = new TrajetAvion("Paris","New-York",14422.3,false);
+		TrajetAvion trajetavion1 = new TrajetAvion("Paris","New-York",14422.3);
 		TrajetAvion trajetavion2 = new TrajetAvion("Paris","Sydney",16422.3,true);
 		
 		

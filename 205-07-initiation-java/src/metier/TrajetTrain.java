@@ -3,9 +3,9 @@ package metier;
 public class TrajetTrain extends Trajet 
 {
 
-	public TrajetTrain(String villeDepart, String villeArrive, double distance, boolean tp)
+	public TrajetTrain(String villeDepart, String villeArrive, double distance)
 	{
-		super(villeDepart,villeArrive, distance,tp);
+		super(villeDepart,villeArrive, distance);
 	}
 	
 	public double calculerCout()

@@ -8,6 +8,19 @@ public abstract class Trajet
 	
 	//trajet privé ou pas
 	private Boolean tp;
+	
+	//methode surcharge pour trajet
+	public  Trajet(String villeDepart, String villeArrive, double distance)
+	{
+		super();
+		this.villeDepart = villeDepart;
+		this.villeArrive = villeArrive;
+		this.distance = distance;
+        this.tp=false;
+		
+	}
+	
+	//methode trajet avec trajet privé (tp)
 	public  Trajet(String villeDepart, String villeArrive, double distance,Boolean tp)
 	{
 		super();
@@ -18,7 +31,6 @@ public abstract class Trajet
 			this.tp=tp;
 		
 	}
-	
 	
 	public Boolean getTp()
 	{
