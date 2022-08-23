@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 public class Personne {
 
-	private String conjoint;
+	private Personne conjoint;
 	private String nom;
 	private String prenom;
 	private int AnneDeNaissance;
@@ -18,13 +18,26 @@ public class Personne {
 		this.AnneDeNaissance = AnneDeNaissancePers;
 	}
 	
+	public String getNom()
+	{
+		return nom;
+	}
+
+	
+	public String getPrenom()
+	{
+		return prenom;
+	}
 
 	public String getGenre()
 	{
 		switch(sexe)
 		{
 		case "f":
+			if(isMarier())
 			return "Mme";
+		else
+			return "Mlle";
 			
 		case "m":
 			return "M";
@@ -40,19 +53,54 @@ public class Personne {
 		return Calendar.getInstance().get(Calendar.YEAR)- AnneDeNaissance;
 	}
 	
-	public void setAnneDeNaissance(int AnneDeNaissance)
+	public boolean isMarier()
 	{
-		this.AnneDeNaissance = AnneDeNaissance;
+		if(conjoint !=null)
+		{
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
 	public void marier(Personne p)
 	{
+	
+			 this.conjoint=p;
+			 p.conjoint=this;
+
 		
 	}
 	
+	public Personne getConjoint()
+	{
+	
+			
+		return conjoint;
+	}
 	
 	public void divorce() 
 	{
+		if(isMarier())
+		{
+			this.conjoint =null;
+		}
 		
+	}
+	
+	public String toString()
+	{
+		if(isMarier())
+				{				
+			return getGenre()+" "+nom+" "+prenom+" à "+getAnneDeNaissance()+" ans il est Marié avec "+getConjoint().getGenre()+" " +getConjoint().getNom()+" agé de "+getConjoint().getAnneDeNaissance();
+
+
+				}else {
+					return getGenre()+" "+nom+" "+prenom+" est agé de "+getAnneDeNaissance()+" il est célibataire";
+
+
+				}
+
+	
 	}
 }
