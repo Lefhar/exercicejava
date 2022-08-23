@@ -55,7 +55,7 @@ public class Personne {
 	
 	public boolean isMarier()
 	{
-		if(conjoint !=null)
+		if(conjoint !=null && conjoint.getNom()!= getNom())
 		{
 			return true;
 		}else {
