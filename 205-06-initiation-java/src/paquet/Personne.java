@@ -34,11 +34,11 @@ public class Personne {
 		switch(sexe)
 		{
 		case "f":
-			if(isMarier())
+			if(isMarier()) {
 			return "Mme";
-		else
+			}else {
 			return "Mlle";
-			
+			}
 		case "m":
 			return "M";
 			
@@ -92,7 +92,7 @@ public class Personne {
 	{
 		if(isMarier())
 				{				
-			return getGenre()+" "+nom+" "+prenom+" à "+getAnneDeNaissance()+" ans "+(getGenre()=="h")?"il":"elle"+" est Marié avec "+getConjoint().getGenre()+" " +getConjoint().getNom()+" agé de "+getConjoint().getAnneDeNaissance();
+			return getGenre()+" "+nom+" "+prenom+" à "+getAnneDeNaissance()+" ans est Marié avec "+getConjoint().getGenre()+" " +getConjoint().getNom()+" agé de "+getConjoint().getAnneDeNaissance();
 
 
 				}else {
