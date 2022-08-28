@@ -10,18 +10,19 @@
 		<div class="container">
 			<div class="row">
 			
-			<h1>Ajout d'un employee</h1>
-			 <form action="#" th:action="@{/saveEmployee}"  th:object = "${employee}" method="POST">
+			<h1>Modification d'un employee</h1>
+			 <form action="#" th:action="@{/saveEmployee}" th:object="${employee}" method="POST">
 			 <label>First name</label>
-			 <input type="text" class="form-control" th:field="*{firstName}" placeholder="First name">
+			 <input type="hidden" th:field="*{id}" >
+			 <input type="text" class="form-control" th:field="*{firstName}" >
 			  <label>Last name</label>
-			 <input type="text" class="form-control" th:field="*{lastName}" placeholder="Last name">
+			 <input type="text" class="form-control" th:field="*{lastName}" >
 			  <label>Email name</label>
-			  <input type="email" class="form-control" th:field="*{email}" placeholder="email">
+			  <input type="email" class="form-control" th:field="*{email}" >
 			  
 			  <div class="form-group mt-2">
-			  <button type="submit" class="btn btn-success">Ajouter</button>
-			   <a th:href="@{/}" class="btn btn-dark">Retour</a>
+			  <button type="submit" class="btn btn-success">Valider</button>
+			  <a th:href="@{/}" class="btn btn-dark">Retour</a>
 			  </div>
 			 </form>
 			 </div>
