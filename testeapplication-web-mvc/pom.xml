@@ -8,11 +8,11 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>testeapplication</artifactId>
+	<groupId>com.harold</groupId>
+	<artifactId>testeapplication-web-mvc-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>testeapplication</name>
-	<description>Demo project for Spring Boot</description>
+	<name>testeapplication-web-mvc-1</name>
+	<description>teste projet web app mvc</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
@@ -30,11 +30,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
-			<scope>runtime</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
