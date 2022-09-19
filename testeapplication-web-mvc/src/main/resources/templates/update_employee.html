@@ -10,6 +10,12 @@
 		<div class="container">
 			<div class="row">
 			
+			<div th:if="${employee == null}">
+   				<div class="alert alert-warning" role="alert">
+				  l'employé n'existe pas
+				</div>
+			</div>
+			<div th:if="${employee}">
 			<h1>Modification d'un employee</h1>
 			 <form action="#" th:action="@{/saveEmployee}" th:object="${employee}" method="POST">
 			 <label>First name</label>
@@ -25,6 +31,7 @@
 			  <a th:href="@{/}" class="btn btn-dark">Retour</a>
 			  </div>
 			 </form>
+			 </div>
 			 </div>
 		</div>
 		
